@@ -1,0 +1,281 @@
+mixin createNav(liElements)
+    each arr in liElements
+        -
+            var length = arr.length;
+            var flag;
+        each li, index in arr
+            if li.hasOwnProperty('head') 
+                - flag = true;
+                h2= li.head
+            else if li.hasOwnProperty('footHead')
+                each val, key in li.footHead
+                    h2
+                        if key.indexOf('关于')
+                            a(href='#' title=key id='link-about')= val
+                        else
+                            a(href='#' title=key id='link-help')= val
+            else 
+                each val, key in li
+                    if flag && index === 1
+                        <ul>
+
+                    li
+                        a(href='#' title=key)= val
+
+                    if flag && index === length-1
+                        </ul>
+
+mixin ideaDiv(h, p1, p2)
+    .idea
+        img&attributes(attributes)
+        h3= h
+        p= p1
+        p= p2
+
+mixin midBottomDiv(h, as, pclass)
+    div
+        h3= h
+        p(class=pclass ? pclass : undefined) 
+            each a in as
+                a(href='#' title=a.title ? a.title : undefined)= a.htmlContent
+                | !{a.after ? a.after : undefined}
+            
+extends ./layout
+
+block content
+    #wrapper
+        #header_index
+            h1
+                a(href='#' title='w3school 在线教程')
+
+        #navfirst
+
+            -
+                var navfirstLis = [
+                    [
+                        {'HTML 系列教程': ''},
+                        {'浏览器脚本教程': ''},
+                        {'服务器脚本教程': ''},
+                        {'ASP.NET 教程': ''},
+                        {'XML 系列教程': ''},
+                        {'Web Services 系列教程': ''},
+                        {'建站手册': ''}
+                    ]
+                ];
+
+            ul
+                +createNav(navfirstLis)
+
+        #navsecond
+
+            -
+                var liElements = [
+                    [
+                        {'head': 'HTML 教程'},
+                        {'HTML 教程': 'HTML'},
+                        {'HTML5 教程': 'HTML5'},
+                        {'XHTML 教程': 'XHTML'},
+                        {'CSS 教程': 'CSS'},
+                        {'CSS3 教程': 'CSS3'},
+                        {'TCP/IP 教程': 'TCP/IP'}
+                    ],
+                    [
+                        {'head': '浏览器脚本'},
+                        {'JavaScript 教程': 'JavaScript'},
+                        {'HTML DOM 教程': 'HTML DOM'},
+                        {'jQuery 教程': 'jQuery'},
+                        {'jQuery Mobile 教程': 'jQuery Mobile'},
+                        {'AJAX 教程': 'AJAX'},
+                        {'JSON 教程': 'JSON'},
+                        {'DHTML 教程': 'DHTML'},
+                        {'E4X 教程': 'E4X'},
+                        {'WMLScript 教程': 'WMLScript'}
+                    ],
+                    [
+                        {'head': '服务器脚本'},
+                        {'PHP 教程': 'PHP'},
+                        {'SQL 教程': 'SQL'},
+                        {'ASP 教程': 'ASP'},
+                        {'ADO 教程': 'ADO'},
+                        {'VBScript 教程': 'VBScript'}
+                    ],
+                    [
+                        {'head': 'XML教程'},
+                        {'XML 教程': 'XML'},
+                        {'DTD教程': 'DTD'},
+                        {'XML DOM 教程': 'XML DOM'},
+                        {'XSL 语言': 'XSL'},
+                        {'XSLT 教程': 'XSLT'},
+                        {'XSL-FO 教程': 'XSL-FO'},
+                        {'XPath 教程': 'XPath'},
+                        {'XQuery 教程': 'XPath'},
+                        {'XLink 教程': 'XLink'},
+                        {'XPointer 教程': 'XPointer'},
+                        {'Schema 教程': 'Schema'},
+                        {'XForms 教程': 'XForms'},
+                        {'WAP 教程': 'WAP'},
+                        {'SVG 教程': 'SVG'}
+                    ],
+                    [
+                        {'head': 'Web Services'},
+                        {'Web Services 教程': 'Web Services'},
+                        {'WSDL 教程': 'WSDL'},
+                        {'SOAP 教程': 'SOAP'},
+                        {'RSS 教程': 'RSS'},
+                        {'RDF 教程': 'RDF'}
+                    ],
+                    [
+                        {'head': '.NET'},
+                        {'ASP.NET 教程': 'ASP.NET'},
+                        {'ASP.NET Web Pages - 教程': 'Web Pages'},
+                        {'ASP.NET Razor - 标记': 'Razor'},
+                        {'ASP.NET MVC - 教程': 'MVC'},
+                        {'ASP.NET Web Forms - 教程': 'Web Forms'}
+                    ],
+                    [
+                        {'head': '建站手册'},
+                        {'网站构建': '网站构建'},
+                        {'万维网联盟 (W3C)': '万维网联盟 (W3C)'},
+                        {'浏览器信息': '浏览器信息'},
+                        {'网站品质': '网站品质'},
+                        {'语义网': '语义网'},
+                        {'职业规划': '职业规划'},
+                        {'网站主机教程': '网站主机'},
+                        {'网络媒体教程': '网络媒体'}
+                    ],
+                    [
+                        {
+                            'footHead': {
+                                '关于 W3School': '关于 W3School',
+                                '帮助 W3School': '帮助 W3School'
+                            }
+                        }
+                    ]
+                ];
+            +createNav(liElements)
+
+        #maincontent
+            #w3
+                h2 领先的 Web 技术教程 - 全部免费
+                p 在 w3school，你可以找到你所需要的所有的网站建设教程。
+                p 从基础的 HTML 到 CSS，乃至进阶的XML、SQL、JS、PHP 和 ASP.NET。
+                p
+                    strong 从左侧的菜单选择你需要的教程！
+
+            +ideaDiv('完整的网站技术参考手册', '我们的参考手册涵盖了网站技术的方方面面', '其中包括W3C的标准技术：HTML、CSS、XML。以及其它的技术，诸如JavaScript、PHP、SQL 等等。')(src='http://www.w3school.com.cn/i/site_photoref.jpg' alt='完整的网站技术参考手册')
+
+
+            +ideaDiv('在线示例测试工具', '在w3school，我们提供上千个示例。', '通过使用我们的在线编辑器，你可以编辑这些例子，并对代码进行实验。')(src='http://w3school.com.cn/i/site_photoexa.jpg' alt='在线实例测试工具')
+
+            +ideaDiv('快捷易懂的学习方式', '一寸光阴一寸金，因此，我们为您提供快捷移动的学习内容', '在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。')(src='http://w3school.com.cn/i/site_photoqe.jpg' alt='快捷移动的学习方式')
+
+            div
+                h3 从何入手?
+                p 什么是一个Web建设者需要学习的知识呢？
+                p W3School将为您回答这个问题，在您成为专业Web开发者的路上助一臂之力，从未更好地应对未来的挑战。
+                p 如果您是初学者，请您阅读 《<a href='#' title='网站建设初级教程'>网站建设初级教程</a>》。
+                p 如果您是开发者，请您阅读 《<a href='#' title='网站建设'>网站建设高级教程</a>》。
+
+            +midBottomDiv('W3School 新闻', [
+                    { title: 'CSS 参考手册', htmlContent: 'CSS3 参考手册', after: '已上线，敬请批评指正' }
+                ])
+
+            +midBottomDiv('W3School 更新信息', [
+                    { title: 'PHP 5 String 函数', htmlContent: '参考手册: PHP String 函数', after: '&nbsp;&nbsp;&nbsp;'},
+                    { title: 'PHP 5 Array 函数', htmlContent: '参考手册: PHP Array 函数'}
+                ])
+
+            +midBottomDiv('W3School 友情链接', [
+                    { htmlContent: 'Firefox 中文社区', after: '&nbsp;&nbsp;&nbsp;' },
+                    { htmlContent: 'W3C 中国总部', after: '&nbsp;&nbsp;&nbsp;' }
+                ], 'partner')
+
+        #sidebar
+            #searchui
+                form(method='get' id='searchform' action='http://www.google.com.hk/search')
+                    p: label(for='searched_content') Search:
+                    p: input(type='hidden' name='sitesearch' value='w3school.com.cn')
+                    input(type='text' name='as_q' class='box' id='searched_content' title='在此输入搜索内容')
+                    input(type='submit' value='Go' class='button' title='搜索！')
+
+            -
+                var liElementsTwo = [
+                    [
+                        {'head': '参考手册'},
+                        {'HTML 参考手册': 'HTML/HTML5 标签'},
+                        {
+                            'CSS 参考手册': 'CSS 1,2,3',
+                            'JavaScript 参考手册': 'JavaScript',
+                            'HTML DOM 参考手册': 'HTML DOM',
+                            'jQuery 参考手册': 'jQuery',
+                            'jQuery Mobile 参考手册': 'jQuery Mobile',
+                            'VBScript 函数': 'VBScript',
+                            'ASP 参考手册': 'ASP',
+                            'ADO 参考手册': 'ADO',
+                            'ASP.NET 参考手册': 'ASP.NET',
+                            'PHP 参考手册': 'PHP 5.1',
+                            'XML DOM 参考手册': 'XML DOM',
+                            'XSLT 元素参考手册': 'XSLT 1.0',
+                            'XPath、XQuery 以及 XSLT 函数': 'XPath 2.0',
+                            'XSL-FO 参考手册': 'XSL-FO',
+                            'WML 参考手册': 'WML 1.1'
+                        },
+                        {'W3C 术语表和词典': 'W3C 术语表'}
+                    ],
+                    [
+                        {'head': '字符集'},
+                        {'HTML 字符集': 'HTML 字符集'},
+                        {
+                            'HTML ASCII 参考手册': 'HTML ASCII',
+                            'HTML ISO-8859-1 参考手册': 'HTML ISO-8859-1'
+                        },
+                        {'HTML 4.01 符号实体': 'HTML 符号'}
+                    ],
+                    [
+                        {'head': '实例/案例'},
+                        {'': 'HTML 实例'},
+                        {'': 'CSS 实例'},
+                        {'': 'XML实例'},
+                        {'': 'JavaScript 实例'},
+                        {'': 'JavaScript 对象实例'},
+                        {'': 'HTML DOM 实例'},
+                        {'': 'jQuery 实例'},
+                        {'': 'jQuery Mobile 实例'},
+                        {'': 'XML DOM 实例'},
+                        {'': 'DHTML 实例'},
+                        {'': 'AJAX 实例'},
+                        {'': 'VBScript 实例'},
+                        {'': 'ASP 实例'},
+                        {'': 'ADO 实例'},
+                        {'': 'SVG 实例'},
+                        {'WAP 演示': 'WAP 演示'}
+                    ],
+                    [
+                        {'head': '测试/考试'},
+                        {'': 'HTML 测试'},
+                        {'': 'HTML5 测试'},
+                        {'': 'XHTML 测试'},
+                        {'': 'CSS 测试'},
+                        {'': 'XML 测试'},
+                        {'': 'JavaScript 测试'},
+                        {'': 'jQuery 测试'},
+                        {'': 'SQL 测试'},
+                        {'': 'ASP 测试'},
+                        {'': 'PHP 测试'}
+                    ],
+                    [
+                        {'head': '代码验证'},
+                        {'网页验证': '验证HTML'},
+                        {'网页验证': '验证CSS'},
+                        {'网页验证': '验证XHTML'},
+                        {'网页验证': '验证XML'},
+                        {'网页验证': '验证WML'}
+                    ]
+                ];
+
+            +createNav(liElementsTwo)
+
+        #footer
+            p W3School 提供的内容仅用于培训。我们不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。W3School 简体中文版的所有内容仅供测试，对任何法律问题及风险不承担任何责任。
+
+            p 当使用本站时，代表您已接受了本站的#[a(href='#' title='关于使用') 使用条款]和#[a(href='#' title='关于隐私') 隐私条款]。版权所有，保留一切权利。赞助商：#[a(href='#' title='上海赢科投资有限公司') 上海赢科投资公司]。#[a(href='#') 蒙ICP备06004630号]

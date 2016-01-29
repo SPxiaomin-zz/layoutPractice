@@ -1,0 +1,312 @@
+/*
+*
+* 代码复用
+*
+*/
+
+@base-url: 'http://www.w3school.com.cn/';
+
+.li(@no, @left, @width) {
+    li:nth-child(@{no}) {
+        left: @left;
+        width: @width;
+
+        a {
+            &:hover {
+                background: url('@{base-url}ui/bg.gif') -@left -55px no-repeat;
+            }
+        }
+    }
+}
+
+.aUnderline() {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/*
+*
+* 正式开始
+*
+*/
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* typography */
+    background-color: #f9f9f9;
+}
+
+body {
+    /* typography */
+    font-size: 12px;
+    font-family: sans-serif;
+
+    /* layout */
+    background: #f9f9f9 url('@{base-url}ui/holder.gif') top center repeat-y;
+
+    #wrapper {
+        /* layout */
+        width: 1129px;
+        margin: 0 auto;
+
+        background: url('@{base-url}ui/wrapper.gif') top left repeat-y;
+
+        #header_index {
+            /* layout */
+            margin-left: 12px;
+
+            a {
+                /* layout */
+                width: 1100px;
+                height: 90px;
+
+                display: block;
+                background: url('@{base-url}ui/head_index.gif') top left no-repeat;
+            }
+        }
+
+        #navfirst {
+            /* layout */
+            margin-left: 12px;
+
+            ul {
+                /* layout */
+                width: 1100px;
+                height: 55px;
+
+                background: transparent url('@{base-url}ui/bg.gif') top left no-repeat;
+                position: relative;
+                list-style: none;
+
+                li {
+                    /* layout */
+                    position: absolute;
+                    top: 0;
+
+                    a {
+                        /* layout */
+                        display: block;
+                        height: 55px;
+                    }
+                }
+
+                .li(1, 0, 155px);
+                .li(2, 155px, 157px);
+                .li(3, 312px, 167px);
+                .li(4, 479px, 158px);
+                .li(5, 637px, 101px);
+                .li(6, 738px, 185px);
+                .li(7, 923px, 177px);
+            }
+        }
+
+        #navsecond {
+            /* layout */
+            width: 180px;
+            margin-left: 12px;
+
+            float: left;
+
+            h2 {
+                /* typography */
+                font-size: 12px;
+                font-weight: bold;
+
+                /* layout */
+                margin: 10px 0 0 12px;
+            }
+
+            ul {
+                /* layout */
+                margin-left: 12px;
+
+                list-style: none;
+
+                a {
+                    /* color */
+                    color: #000;
+
+                    .aUnderline
+                }
+            }
+
+            #link-help,
+            #link-about {
+                /* color */
+                color: #0479A7;
+
+                .aUnderline
+            }
+        }
+
+
+        #maincontent {
+            /* layout */
+            width: 740px;
+
+            float: left;
+
+            div {
+                /* layout */
+                width: 710px;
+                padding: 0 0 20px 0;
+                border-top: 1px solid #aaa;
+                border-bottom: 1px solid #aaa;
+                margin: 0 0 0 15px;
+            }
+
+            h3 {
+                margin-top: 15px;
+            }
+
+            p {
+                margin-top: 12px;
+                line-height: 150%;
+            }
+
+            a {
+                color: #900b09;
+
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+
+            #w3 {
+                /* layout */
+                text-align: center;
+
+                h2 {
+                    /* typography */
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    /* layout */
+                    margin-top: 20px;
+                }
+
+                strong {
+                    /* typography */
+                    font-size: 12px;
+                    font-weight: 800;
+                }
+            }
+
+            .idea {
+                /* layout */
+                padding: 0;
+                
+                min-height: 118px;
+
+                img {
+                    /* layout */
+                    float: left;
+                }
+            }
+
+            .partner {
+                a {
+                    color: #0479A7;
+                }
+            }
+        }
+
+        #sidebar {
+            /* layout */
+            width: 180px;
+
+            float: left;
+
+            #searchui {
+                /* layout */
+                margin: 15px 0 15px 5px;
+
+                p {
+                    /* layout */
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    /* typography */
+                    font-size: 12px;
+
+                    /* layout */
+                    height: 20px;
+                    margin-left: 2px;
+                }
+
+                input.box {
+                    /* layout */
+                    width: 135px;
+                }
+
+                input.button {
+                    /* color */
+                    color: #fff;
+
+                    /* layout */
+                    width: 25px;
+
+                    background-color: #AE4141;
+                }
+            }
+
+            h2 {
+                /* typography */
+                font-size: 12px;
+                font-weight: bold;
+
+                /* layout */
+                margin: 10px 0 0 12px;
+            }
+
+            ul {
+                /* layout */
+                margin-left: 12px;
+
+                list-style: none;
+
+                a {
+                    /* color */
+                    color: #900b09;
+
+                    &:hover {
+                        /* color */
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+
+        #footer {
+            /* layout */
+            width: 1100px;
+            height: 46px;
+            border-top: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+            margin-left: 12px;
+
+            background: #b6b6b6;
+            clear: both;
+
+            p {
+                margin: 5px 10px 0 10px;
+
+                a {
+                    color: #000;
+
+                    .aUnderline;
+                }
+            }
+        }
+    }
+}
