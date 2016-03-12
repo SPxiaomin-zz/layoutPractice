@@ -1,0 +1,14 @@
+/*
+* code reuse
+*/
+/*
+* code begin
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 12px;
+  background: #f5f5f5;
+}
