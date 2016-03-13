@@ -14,7 +14,7 @@ var paths = {
 
 
 gulp.task('html', function() {
-  var stream = gulp.src(paths.html).
+  var stream = gulp.src(paths.html)
     .pipe(livereload());
 
   return stream;

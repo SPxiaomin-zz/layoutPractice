@@ -1,19 +1,217 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <title>imooc 企业网站实例</title>
-  <link rel="stylesheet" href="./css/src/index.css">
+    <meta charset="UTF-8">
+    <title>imooc 企业网站实例</title>
+    <link rel="stylesheet" href="./css/src/index.css">
+    <script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script>
+    <!--引入myFocus库-->
+    <script type="text/javascript">
+        myFocus.set({
+            id: 'boxID', //焦点图盒子ID
+            pattern: 'mF_fancy', //风格应用的名称
+            time: 3, //切换时间间隔(秒)
+            trigger: 'click', //触发切换模式:'click'(点击)/'mouseover'(悬停)
+            width: 1000, //设置图片区域宽度(像素)
+            height: 310, //设置图片区域高度(像素)
+            txtHeight: 'default' //文字层高度设置(像素),'default'为默认高度，0为隐藏
+        });
+    </script>
 </head>
+
 <body>
-  <div class="top">
-    <div class="top-content">
-      <ul>
-        <li><a href="#">联系我们</a></li>
-        <li><a href="#">加入收藏</a></li>
-        <li><a href="#">设为首页</a></li>
-      </ul>
+    <div class="top">
+        <div class="top-content">
+            <ul class="clearfix">
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加入收藏</a></li>
+                <li><a href="#">设为首页</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
+
+    <div class="wrapper">
+        <div class="logo clearfix">
+            <div class="logo-left">
+                <img src="./images/logo.jpg" alt="logo">
+            </div>
+
+            <div class="logo-right">
+                <img src="./images/tel.jpg" alt="tel">24小时服务热线: <span class="tel">123-456-7890</span>
+            </div>
+        </div>
+
+        <div class="nav clearfix">
+            <div class="nav-left"></div>
+
+            <div class="nav-mid">
+                <div class="nav-mid-left">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">关于慕课</a></li>
+                        <li><a href="#">新闻动态</a></li>
+                        <li><a href="#">课程中心</a></li>
+                        <li><a href="#">在线课程</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-mid-right">
+                    <form action="" method="post">
+                        <input type="text" name="js_search_text" class="search-text">
+                    </form>
+                </div>
+            </div>
+
+            <div class="nav-right"></div>
+        </div>
+
+        <div class="ad">
+            <div id="boxID">
+                <!--焦点图盒子-->
+                <div class="loading"><img src="images/loading.gif" alt="请稍候..." /></div>
+                <!--载入画面(可删除)-->
+                <div class="pic">
+                    <!--内容列表(li数目可随意增减)-->
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/ad2.jpg" thumb="" alt="" text="详细描述2" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/ad3.jpg" thumb="" alt="" text="详细描述3" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/ad4.jpg" thumb="" alt="" text="详细描述4" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/ad3.jpg" thumb="" alt="" text="详细描述5" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main clearfix">
+            <div class="news">
+                <div class="title">
+                    <h2 class="title-left">新闻中心</h2>
+                    <span class="title-right"><a href="#">More&gt;&gt;</a></span>
+                </div>
+
+                <div class="pic-news">
+                    <img src="./images/news.jpg" alt="520慕女神喊你来告白">
+                    <h2><a href="#">520慕女神喊你来告白！</a></h2>
+                    <p>
+                        活动时间: 5月20日-5月25日<br> 获奖公布时间: 5月26日<br>
+                        <a href="#">Learn More&gt;&gt;</a>
+                    </p>
+                </div>
+
+                <div class="news-list">
+                    <ul>
+                        <li>
+                            <span>2014-06-01</span>
+                            <a href="#">【慕客访谈 用户篇】“尤为屌丝”在路上</a>
+                        </li>
+                        <li>
+                            <span>2014-06-01</span>
+                            <a href="#">【有奖活动】给父亲的三行书信</a>
+                        </li>
+                        <li>
+                            <span>2014-05-30</span>
+                            <a href="#">《程序猿，请晒出你的童年》活动获奖公告</a>
+                        </li>
+                        <li>
+                            <span>2014-05-28</span>
+                            <a href="#">【慕课访谈】破茧成蝶---美女程序猿的蜕变史</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="title">
+                    <h2 class="title-left">课程中心</h2>
+                    <span class="title-right"><a href="#">More&gt;&gt;</a></span>
+                </div>
+                
+                <div class="product-list">
+                    <img src="./images/css.jpg" alt="CSS圆角进化论">
+                    <h2><a href="#">CSS圆角进化论</a></h2>
+                    <p>CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模式、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。</p>
+                </div>
+
+                <div class="product-type clearfix">
+                    <ul>
+                        <li>PHP开发</li>
+                        <li>前端开发</li>
+                        <li>JAVA开发</li>
+                        <li>Android开发</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="video">
+                    <div class="title">
+                        <h2 class="title-left">媒体聚焦</h2>
+                        <span class="title-right"><a href="#">More&gt;&gt;</a></span>
+                    </div>
+                    <p class="video-content">
+                        <embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" allowfullscreen="true" quality="high" width="220" height="140" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="./images/app.jpg" alt="app">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="copyright-content clearfix">
+            <ul>
+                <li>关于
+                    <ul>
+                        <li>品牌故事</li>
+                        <li>联系我们</li>
+                        <li>加入我们</li>
+                        <li>版权声明</li>
+                    </ul>
+                </li>
+                <li>课程
+                    <ul>
+                        <li>PHP开发</li>
+                        <li>前端开发</li>
+                        <li>JAVA开发</li>
+                        <li>Android开发</li>
+                    </ul>
+                </li>
+                <li>关注
+                    <ul>
+                        <li>新浪微博</li>
+                        <li>腾讯微博</li>
+                        <li>企业微信</li>
+                        <li>QQ空间</li>
+                    </ul>
+                </li>
+                <li>留言
+                    <ul>
+                        <li>意见反馈</li>
+                        <li>问题留言</li>
+                        <li>媒体联系</li>
+                        <li>在线客服</li>
+                    </ul>
+                </li>
+                <li><img src="./images/weixin.png" alt="微信关注">微信关注
+                    <ul>
+                        <li><img src="./images/qrcode.jpg" alt="扫描关注慕课网官方微信"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
