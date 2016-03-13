@@ -1,5 +1,9 @@
 # imooc 企业网站实例
 
+## 最终效果
+
+<img src="./represent.png" alt="最终效果图">
+
 ## 制作过程总结
 
 - `.top` 部分
