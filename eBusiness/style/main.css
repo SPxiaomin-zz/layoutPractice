@@ -1,0 +1,34 @@
+/* 公用 */
+
+.comWidth {
+    width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftArea {
+    float: left;
+}
+
+.rightArea {
+    float: right;
+}
+
+/* topBar */
+
+.topBar {
+    height: 31px;
+
+    line-height: 31px;
+
+    background-color: #f7f7f7;
+}
+
+.collection {
+    padding-left: 19px;
+
+    font-weight: bold;
+
+    background: url(../images/icon/collection.jpg) no-repeat left center;
+}
