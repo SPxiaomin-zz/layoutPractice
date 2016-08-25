@@ -32,3 +32,67 @@
 
     background: url(../images/icon/collection.jpg) no-repeat left center;
 }
+
+.topBar a:hover {
+    color: red;
+}
+
+/* logo */
+
+.logoBar {
+    height: 85px;
+
+    background-color: #1D7AD9;
+}
+
+.logo {
+    padding-top: 13px;
+    padding-left: 41px;
+}
+
+/* search */
+
+.search_box {
+    width: 430px;
+
+    padding-top: 23px;
+    padding-left: 185px;
+}
+
+.search_text {
+    width: 350px;
+    height: 35px;
+
+    padding: 0 5px;
+}
+
+.search_btn {
+    width: 70px;
+    height: 35px;
+
+    color: #fff;
+    font: 14px "Microsoft YaHei", "微软雅黑";
+
+    background-color: #ff8c00;
+}
+
+/* 购物车 */
+
+.shopCar {
+    width: 145px;
+    height: 35px;
+
+    margin-top: 23px;
+
+    background-color: #ff8c00;
+}
+
+.shopText {
+    width: 87px;
+    height: 100%;
+
+    border-right: 1px solid #e27a00;
+
+    color: #fff;
+    font: 14px "Microsoft YaHei", "微软雅黑";
+}
