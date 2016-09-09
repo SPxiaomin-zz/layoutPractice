@@ -50,4 +50,27 @@
 
 - .navBox 实现总结
 
-    -
+    - 布局分析
+
+        - 通过 div.comWidth 来实现了内容居中和背景颜色的设置；
+        - 然后通过浮动设置了 .shopClass 和 .nav 两块；
+        - 在 .shopClass 中的 .shopClass_show 和 .shopClass_list 是通过 relative 和 absolute 来定位实现的；
+        - .nav 中的各个选项是通过 float 来实现的；
+
+    - 细节部分
+
+        - .shopClass 中的 h3 中的小箭头实现：
+
+            是通过多添加一个标签并设置背景图片来实现的，实现了位置跟随的特性（一个不错的小技巧）；
+
+        - .shopClass_show 的 `width: 100%` 设置实现得也非常的巧妙，其包含块是设置了 `relative` 的 shopClass；
+        - .shopClass_item 中的小箭头是通过设置背景图片来实现的；
+        - .shopClass_cont 标签的添加也是一个小技巧
+
+            作者在需要设置　padding 的时候，由于 .shopClass_list 和 其中的内容都已经写好了，如果这个时候要在 .shopClass_list 中设置 padding 就要修改 .shopClass_list 的宽度（由于作者并没有使用 box-sizing 设置盒子模型的种类），于是作者就通过多添加一个标签的方式实现了 padding 的设置；
+
+        - .shopList_item 的实现也是挺巧妙的：
+
+            通过设置 dt 元素的 padding-left 和 margin-top 就实现了和浮动一样的效果，太棒了；
+
+            但是作者貌似在 a 元素没有设置 `display: inline-block` 就导致了文字分行时断开的现象，于是我便添加了此声明；
