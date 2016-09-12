@@ -60,7 +60,7 @@
     - 细节部分
 
         - .shopClass
-        
+
             - .shopClass 中的 h3 中的小箭头实现：
 
                 是通过多添加一个标签并设置背景图片来实现的，实现了位置跟随的特性（一个不错的小技巧）；
@@ -80,3 +80,47 @@
             - .shopList_links 中的按钮中的的箭头：
 
                 是通过多添加一个 span 标签并设置背景图片来实现的；
+
+- .banner 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现了内容居中显示的效果；
+        - 然后 .banner_bar、.imgBox、li 通过浮动和宽高度的设置实现布局效果，并通过 `overflow: hidden` 和 relative、absolute 来实现动画的效果；
+        - 图片位置标识 .imgNum 小方框是通过 absolute 绝对定位来实现的；
+
+    - 细节分析
+
+        - .imgNum 部分使用了 absolute，由于其具有收缩性，所以可以通过 `width: 100%` 使其宽度为父元素的宽度或者也可以通过多添加一个 `right: 0` 的属性来实现同样的效果；
+
+- .shopTit 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现了内容的居中显示的效果；
+        - 通过 .shopTit 的 line-height 样式的设置，实现了这一行中的字体居中的效果；
+        - 通过 float 属性的设置来实现 .icon、h3 和 .more 的位置设置效果；
+
+- .shopList 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现了内容的居中显示效果；
+        - .leftArea 和 .rightArea 通过浮动和定宽实现了左右布局效果；
+        - .leftArea 中的轮播图的实现和上面的 .banner 实现是一样的；
+        - .rightArea 中分为上下两块，上下的两个部分都是通过 float 来实现布局的；
+
+    - 细节分析
+
+        - .rightArea
+
+            - 由于 .shopList_top 和 .shopList_sm 都通过 `margin-right: -4px` 来实现了内容超过父元素的宽度但是浮动到一行的效果，所以通过在 .rightArea 上设置了 `overflow: hidden` 来将超出的内容实现隐藏；
+            - .shop_img 中的 img 设置了 `width: 100%`，虽然其包含在了 a 元素中，但是 img 的包含块依然是 .shop_img，所以百分比值是相对于 .shop_img 来进行计算的；
+            - .shop_item 通过设置 `text-align: center` 来实现了其中的文字居中的效果；
+            - .shopItem_sm 中通过了浮动来实现布局的效果；
+
+- .hr_25 这个空标签的使用也是非常的有技巧性的: 如果在 .shopList 和 .footer 分别设置 margin-bottom 和 margin-top 的话，就会发生外边距合并的问题，所以通过此方式的实现真的是非常的妙；
+
+- .footer 实现总结
+
+    - stop writing here

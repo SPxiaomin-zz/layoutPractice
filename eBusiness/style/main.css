@@ -389,7 +389,7 @@
     height: 326px;
 }
 
-.banner_big imgBox {
+.banner_big .imgBox {
     width: 1620px;
     height: 326px;
 }
@@ -400,7 +400,7 @@
     height: 400px;
 }
 
-.banner_sm imgBox {
+.banner_sm .imgBox {
     width: 380px;
     height: 400px;
 }
