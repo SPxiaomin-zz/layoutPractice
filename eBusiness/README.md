@@ -65,7 +65,7 @@
 
                 是通过多添加一个标签并设置背景图片来实现的，实现了位置跟随的特性（一个不错的小技巧）；
 
-            - .shopClass_show 的 `width: 100%` 设置实现得也非常的巧妙，其包含块是设置了 `relative` 的 shopClass；
+            - .shopClass_show 的 `width: 100%` 设置实现得也非常的巧妙，其包含块是设置了 `relative` 的 .shopClass；
             - .shopClass_item 中的小箭头是通过设置背景图片来实现的；
             - .shopClass_cont 标签的添加也是一个小技巧
 
@@ -81,6 +81,8 @@
 
                 是通过多添加一个 span 标签并设置背景图片来实现的；
 
+#### .banner
+
 - .banner 实现总结
 
     - 布局分析
@@ -93,6 +95,8 @@
 
         - .imgNum 部分使用了 absolute，由于其具有收缩性，所以可以通过 `width: 100%` 使其宽度为父元素的宽度或者也可以通过多添加一个 `right: 0` 的属性来实现同样的效果；
 
+#### .shopTit
+
 - .shopTit 实现总结
 
     - 布局分析
@@ -100,6 +104,8 @@
         - 通过 .comWidth 实现了内容的居中显示的效果；
         - 通过 .shopTit 的 line-height 样式的设置，实现了这一行中的字体居中的效果；
         - 通过 float 属性的设置来实现 .icon、h3 和 .more 的位置设置效果；
+
+#### .shopList
 
 - .shopList 实现总结
 
@@ -119,8 +125,14 @@
             - .shop_item 通过设置 `text-align: center` 来实现了其中的文字居中的效果；
             - .shopItem_sm 中通过了浮动来实现布局的效果；
 
+#### .hr_25
+
 - .hr_25 这个空标签的使用也是非常的有技巧性的: 如果在 .shopList 和 .footer 分别设置 margin-bottom 和 margin-top 的话，就会发生外边距合并的问题，所以通过此方式的实现真的是非常的妙；
+
+#### .footer
 
 - .footer 实现总结
 
-    - stop writing here
+    - 布局分析
+
+        - .footer 通过上下的 padding、text-align: center 和 line-height 来实现文本居中和空隙的设置效果；
