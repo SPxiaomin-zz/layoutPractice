@@ -136,3 +136,41 @@
     - 布局分析
 
         - .footer 通过上下的 padding、text-align: center 和 line-height 来实现文本居中和空隙的设置效果；
+
+### 产品分类页面总结
+
+#### .products
+
+- .products 实现总结
+
+    - 布局分析
+
+        - .leftArea 和 .rightArea 通过浮动和定宽实现了左右布局的效果；
+        - 通过 .comWidth 实现了内容居中的效果；
+
+#### .leftNav
+
+- .leftNav 实现总结
+
+    - 布局分析
+
+        - .nav_title 通过 `line-height` 和 `text-align: center` 实现了垂直和水平方向的居中效果；
+        - .nav_cont 中的 li 元素通过 `width: 50%` 和 float 实现了左右两栏的效果；
+
+    - 细节分析
+
+        - 在每一个 .nav_cont 的下方都设置了下边框，这样最后一个 .nav_cont 就会和父元素 .leftNav 的边框产生了重复的效果，于是作者通过了 `margin-bottom: -1px` 的小技巧让 .nav_cont 的 border-bottom 和 .leftNav 的 border-bottom 发生重叠；
+
+#### .products_title
+
+- .products_title 实现总结
+
+    - 细节分析
+
+        - h3 通过了 .line-height 实现了垂直方向居中的效果；通过 `text-indent` 实现字体的偏移效果；
+
+#### .products_list
+
+- .products_list 实现总结
+
+    - stop writing here

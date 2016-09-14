@@ -27,6 +27,10 @@
     height: 25px;
 }
 
+.hr_15 {
+    height: 15px;
+}
+
 .hr_7 {
     height: 7px;
 }
@@ -585,6 +589,8 @@
     padding-top: 30px;
 }
 
+/* 产品分类页面增加的代码 */
+
 /* 产品分类 */
 
 .products .leftArea {
@@ -597,6 +603,12 @@
 
 .products .banner_bar {
     float: none;
+}
+
+.products .item {
+    width: 25%;
+
+    margin-bottom: 10px;
 }
 
 /* 产品分类导航 */
@@ -656,4 +668,56 @@
 
     line-height: 34px;
     text-indent: 9px;
+}
+
+/* 商品 */
+
+.item {
+    float: left;
+}
+
+.item_cont {
+    padding: 0 15px;
+}
+
+.img_item {
+    height: 170px;
+
+    text-align: center;
+}
+
+.img_item img {
+    height: 170px;
+}
+
+.item p {
+    line-height: 20px;
+}
+
+.item a {
+    color: #000;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+.money {
+    padding-top: 10px;
+
+    color: #d4105a;
+    font-weight: bold;
+}
+
+.stars {
+    display: inline-block;
+
+    width: 13px;
+    height: 12px;
+
+    margin-right: 1px;
+
+    background: url(../images/icon/collection.jpg) left top no-repeat;
+
+    overflow: hidden;
 }
