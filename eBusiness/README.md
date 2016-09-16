@@ -173,4 +173,6 @@
 
 - .products_list 实现总结
 
-    - stop writing here
+    - 布局分析
+
+        - 通过 `float` 和 `width: 25%` 实现了4列布局的效果；
