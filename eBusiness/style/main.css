@@ -652,6 +652,20 @@
     width: 50%;
 }
 
+.vertical li {
+    float: none;
+
+    width: auto;
+
+    padding-left: 8px;
+}
+
+.vertical .nav_title,
+.vertical .nav_cont h3 {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
 /* 标题 */
 
 .products_title {
@@ -720,4 +734,56 @@
     background: url(../images/icon/collection.jpg) left top no-repeat;
 
     overflow: hidden;
+}
+
+
+/* 筛选 */
+
+.screening {
+    border-bottom: 1px solid #ccc;
+
+    font-family: Verdana;
+}
+
+.screening dt {
+    float: left;
+
+    width: 74px;
+
+    margin-right: 42px;
+
+    line-height: 32px;
+    text-align: right;
+}
+
+.limit {
+    float: left;
+
+    width: 55px;
+
+    line-height: 32px;
+}
+
+.screening .active {
+    color: #fff;
+
+    background-color: #1d7ad9;
+}
+
+.screening a {
+    padding: 2px;
+}
+
+.screening_list {
+    float: left;
+
+    line-height: 32px;
+
+    width: 626px;
+}
+
+.screening_list li {
+    float: left;
+
+    width: 20%;
 }
