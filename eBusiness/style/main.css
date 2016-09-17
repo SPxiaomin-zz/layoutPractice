@@ -787,3 +787,134 @@
 
     width: 20%;
 }
+
+.screen_more {
+    float: left;
+
+    height: 23px;
+
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    margin-right: 10px;
+
+    line-height: 23px;
+
+}
+
+.screen_more a {
+    padding-right: 14px;
+
+    background: url(../images/icon/sj_grey.gif) right center no-repeat;
+}
+
+.addInfo {
+    height: 31px;
+
+    border: 1px solid #ccc;
+
+    background-color: #f5f5f5;
+}
+
+.address {
+    float: left;
+}
+
+.add_text {
+    float: left;
+
+    padding-left: 12px;
+    padding-right: 6px;
+
+    line-height: 31px;
+}
+
+.addInfo .select {
+    margin-top: 4px;
+}
+
+.screen_text {
+    padding-right: 80px;
+
+    line-height: 31px;
+}
+
+.check {
+    position: relative;
+    top: -1px;
+}
+
+.check input,
+.check label {
+    vertical-align: middle;
+}
+
+.shop_number em {
+    color: #f00;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.addCar {
+    border: 1px solid #999;
+}
+
+.screening_list_more {
+    padding-left: 0.5%;
+}
+
+.screening_list_more .item {
+    width: 33.3%;
+}
+
+/* 组件 */
+
+.select {
+    position: relative;
+
+    float: left;
+
+    height: 22px;
+
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 1px solid #999;
+
+    line-height: 22px;
+
+    background-color: #fff;
+}
+
+.select h3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.select span {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 20px;
+
+    background: url(../images/icon/sj_blue.jpg) center center no-repeat;
+}
+
+.show_select {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: -1px;
+
+    width: 100%;
+
+    border: 1px solid #999;
+
+    background-color: #fff;
+}
+
+.show_select li {
+    padding-left: 10px;
+}
