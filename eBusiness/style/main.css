@@ -986,3 +986,51 @@
 .show_select li {
     padding-left: 10px;
 }
+
+/* 商品介绍 */
+
+.grey {
+    background-color: #f0f0f0;
+}
+
+/* 位置 */
+.userPosition {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    font-size: 0;
+    font-family: Verdana;
+}
+
+.userPosition em,
+.userPosition span,
+.userPosition strong,
+.userPosition a {
+    font-size: 12px;
+}
+
+.userPosition em {
+    font-style: normal;
+}
+
+.userPosition a:hover {
+    text-decoration: underline;
+}
+
+.description_info {
+    background-color: #fff;
+}
+
+.description {
+    border: 1px solid #ccc;
+}
+
+.description .leftArea {
+    width: 309px;
+}
+
+.description .rightArea {
+    width: 690px;
+
+    border-left: 1px solid #ccc;
+}
