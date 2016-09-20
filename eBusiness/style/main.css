@@ -857,7 +857,14 @@
 }
 
 .addCar {
+    display: inline-block;
+
+    height: 22px;
+
+    padding: 0 6px 0 23px;
     border: 1px solid #999;
+
+    background: url(../images/icon/car.jpg) 6px center no-repeat;
 }
 
 .screening_list_more {
@@ -866,6 +873,67 @@
 
 .screening_list_more .item {
     width: 33.3%;
+}
+
+/* page */
+
+.page {
+    text-align: center;
+}
+
+.page a {
+    display: inline-block;
+
+    height: 24px;
+
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    margin: 0 2px;
+
+    line-height: 24px;
+}
+
+.page .hl {
+    display: inline-block;
+
+    padding: 0 12px;
+    margin: 0 2px;
+}
+
+.morePage {
+    display: inline-block;
+
+    height: 24px;
+
+    padding-left: 14px;
+
+    line-height: 24px;
+}
+
+.pageNum {
+    width: 29px;
+    height: 24px;
+
+    padding: 0 3px;
+    border: 1px solid #ccc;
+    margin-left: 4px;
+
+    text-align: center;
+}
+
+.page_btn {
+    width: 44px;
+    height: 24px;
+
+    border: 1px solid #ccc;
+
+    line-height: 24px;
+
+    background-color: #e8e8e8;
+}
+
+.ye {
+    padding: 0 8px 0 6px;
 }
 
 /* 组件 */

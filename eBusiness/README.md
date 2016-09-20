@@ -176,3 +176,41 @@
     - 布局分析
 
         - 通过 `float` 和 `width: 25%` 实现了4列布局的效果；
+
+### 筛选页面总结
+
+#### .screening_box
+
+- 前三个 .screening
+
+    - 布局分析
+
+        - `dt` 和 `dd` 通过了浮动、定宽来实现布局的效果；通过 `line-height` 实现了垂直方向居中的效果；
+
+- 最后一个 .screening
+
+    - 细节分析
+
+        - .screen_more 中的箭头是通过在其中包含的 a 标签设置背景和 padding 来实现的；
+
+#### .addInfo
+
+- .addInfo 实现总结
+
+    - 布局分析
+
+        - 通过左右浮动实现了布局的效果；
+
+    - 细节分析
+
+        - .select 设置了 `position: relative;` 和 `padding`，然后其中的图标标签设置了绝对定位实现了定位于右边的效果；
+        - .screen_text 部分中的 .checkbox 和 .check 通过 `vertical-align: middle` 和 `relative` 布局实现了垂直居中的效果；
+
+#### .page
+
+- .page 实现总结
+
+    - 布局分析
+
+        - 通过 `text-align: center` 实现水平居中的效果；
+        - 通过文本基线对齐的特性实现垂直方向上的对齐；
