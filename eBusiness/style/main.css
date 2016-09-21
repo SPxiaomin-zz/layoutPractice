@@ -1030,7 +1030,102 @@
 }
 
 .description .rightArea {
-    width: 690px;
+    width: 688px;
 
     border-left: 1px solid #ccc;
+}
+
+/* 图片展示 */
+
+.description_imgs .big {
+    height: 340px;
+
+    text-align: center;
+}
+
+.des_smimg {
+    width: 265px;
+
+    padding-left: 1px;
+    margin: 0 auto;
+}
+
+.des_smimg li {
+    float: left;
+
+    margin-left: -1px;
+}
+
+.des_smimg img {
+    border: 1px solid #ccc;
+}
+
+.des_smimg .active {
+    position: relative;
+
+    border-color: #317ee7;
+}
+
+.des_content {
+    padding: 10px;
+}
+
+.des_content_tit {
+    padding: 13px 25px;
+
+    font: bold 16px/22px "Microsoft YaHei", "微软雅黑";
+}
+
+.des_content .dl {
+    margin-bottom: 8px;
+}
+
+.des_content .dt {
+    float: left;
+
+    width: 75px;
+
+    color: #666;
+    text-indent: 17px;
+    line-height: 25px;
+}
+
+.des_money {
+    color: #f30;
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+.des_money em {
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* 换购 */
+
+.hg {
+    display: inline-block;
+
+    padding-top: 4px;
+}
+
+.hg_icon {
+    display: inline-block;
+
+    width: 55px;
+    height: 18px;
+
+    margin-right: 10px;
+
+    color: #fff;
+    line-height: 18px;
+    font-style: normal;
+    text-indent: 16px;
+
+    background: url(../images/icon/hg_icon.jpg) left top no-repeat;
+}
+
+/* 送货 */
+.des_position {
+    background-color: #f2f2f2;
 }
