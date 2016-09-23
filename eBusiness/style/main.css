@@ -23,6 +23,10 @@
     display: block;
 }
 
+.hr_45 {
+    height: 45px;
+}
+
 .hr_25 {
     height: 25px;
 }
@@ -1090,6 +1094,10 @@
     line-height: 25px;
 }
 
+.des_content .dd {
+    padding-left: 75px;
+}
+
 .des_money {
     color: #f30;
     font-size: 18px;
@@ -1127,5 +1135,296 @@
 
 /* 送货 */
 .des_position {
+    padding: 15px 0;
+
     background-color: #f2f2f2;
+}
+
+.theGoods {
+    padding-left: 10px;
+
+    line-height: 24px;
+}
+
+.des_content .colorSelect {
+    line-height: 35px;
+}
+
+.des_item {
+    float: left;
+
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+
+    color: #666;
+
+    background-color: #fff    ;
+}
+
+.des_item_active {
+    border-color: #317ee7;
+
+    color: #333;
+}
+
+.des_item_sm {
+    padding: 3px 7px;
+    margin-bottom: 8px;
+}
+
+.des_content .des_select_more {
+    line-height: 55px;
+}
+
+/*数量 */
+
+.des_number {
+    float: left;
+
+    width: 82px;
+    height: 32px;
+
+    border: 1px solid #b2b2b2;
+}
+
+.des_number div {
+    float: left;
+
+    height: 100%;
+}
+
+.reduction,
+.plus {
+    width: 15px;
+
+    color: #333;
+    line-height: 32px;
+    text-align: center;
+
+    background: url(../images/icon/plus_bg.jpg) left top no-repeat;
+}
+
+.reduction {
+    border-right: 1px solid #ccc;
+}
+
+.plus {
+    border-left: 1px solid #ccc;
+}
+
+.des_input {
+    width: 50px;
+}
+
+.des_input input {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    background: url(../images/icon/des_input_bg.jpg) left top no-repeat;
+}
+
+.xg {
+    float: left;
+
+    padding-left: 10px;
+
+    color: #656565;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.xg em {
+    color: #fb7700;
+    font-style: normal;
+}
+
+.des_content .des_num {
+    line-height: 32px;
+}
+
+/* 已选择 */
+
+.des_select {
+    margin: 22px 0 12px;
+
+    text-indent: 17px;
+    font-weight: bold;
+}
+
+.des_select span {
+    color: #0479c9;
+}
+
+.shop_buy {
+    text-align: center;
+}
+
+.shopping_btn,
+.buy_btn {
+    display: inline-block;
+
+    width: 184px;
+    height: 48px;
+
+    background: url(../images/icon/buy_btn.jpg) left top no-repeat;
+}
+
+.line {
+    display: inline-block;
+
+    width: 1px;
+    height: 90px;
+
+    margin: 0 40px;
+
+    background-color: #ccc;
+
+    overflow: hidden;
+}
+
+.line,
+.shopping_btn,
+.buy_btn {
+    vertical-align: middle;
+}
+
+.notes {
+    color: #ccc;
+    text-indent: 17px;
+}
+
+/* 产品介绍 */
+
+.des_info .leftArea {
+    width: 190px;
+}
+
+.des_info .rightArea {
+    width: 790px;
+}
+
+.recommend {
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+
+    background-color: #fff;
+}
+
+.recommend .tit {
+    height: 39px;
+
+    border-bottom: 1px solid #ccc;
+
+    font-size: 14px;
+    line-height: 39px;
+    text-indent: 15px;
+
+    background-color: #f3f3f3;
+}
+
+.recommend .item {
+    float: none;
+}
+
+.recommend .money {
+    padding-top: 0;
+}
+
+/* 详细介绍 */
+
+.des_infoContent {
+    border: 1px solid #ccc;
+
+    background-color: #fff;
+}
+
+.des_tit {
+    height: 39px;
+
+    border-bottom: 1px solid #ccc;
+
+    background: url(../images/icon/des_title.jpg) left top repeat-x;
+}
+
+.des_tit li {
+    float: left;
+
+    width: 50%;
+
+    border-left: 1px solid #ccc;
+    margin-left: -1px;
+
+    font: 14px/39px "宋体";
+    text-align: center;
+}
+
+.des_tit .active {
+    color: #fff;
+    font-weight: bold;
+
+    background-color: #0479ca
+}
+
+.des_tit span {
+    display: inline-block;
+
+    padding-left: 32px;
+
+    line-height: 39px;
+
+    background: url(../images/icon/des_title_icon.png) left center no-repeat;
+}
+
+.ad {
+    padding: 30px 0;
+
+    text-align: center;
+}
+
+.info_tit {
+    height: 26px;
+
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 18px;
+
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.info_tit h3 {
+    float: left;
+
+    height: 26px;
+
+    padding-right: 8px;
+    border-bottom: 1px solid #2357a5;
+
+    font-size: 16px;
+    color: #2357a5;
+}
+
+.info_tit h4 {
+    padding-left: 4px;
+
+    color: #656565;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.info_text {
+    padding: 0 20px;
+}
+
+.info_text p {
+    color: #656565;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.center {
+    display: block;
+
+    margin: 0 auto;
 }
