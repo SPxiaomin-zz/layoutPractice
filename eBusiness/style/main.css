@@ -1428,3 +1428,162 @@
 
     margin: 0 auto;
 }
+
+/* 商品评价 */
+
+.shopDes_tit {
+    height: 38px;
+
+    padding-left: 10px;
+
+    color: #656565;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.score_box {
+    height: 120px;
+
+    padding-left: 10px;
+}
+
+.score {
+    float: left;
+
+    margin-right: 10px;
+
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.score em {
+    color: #65657d;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.score span {
+    color: #ff8f00;
+    font-size: 50px;
+}
+
+.score_speed {
+    position: relative;
+
+    float: left;
+
+    width: 450px;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+.score_speed_text {
+    height: 16px;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    background-color: #bdbdbd;
+
+    overflow: hidden;
+}
+
+.score_speed_text li {
+    float: left;
+}
+
+.score_speed_text .speed_01 {
+    width: 114px;
+
+    text-indent: 26px;
+}
+
+.score_speed_text .speed_02 {
+    width: 82px;
+}
+
+.score_speed_text .speed_03 {
+    width: 76px;
+}
+
+.score_speed_text .speed_04 {
+    width: 65px;
+}
+
+.score_num {
+    position: absolute;
+    left: 94%;
+    top: -21px;
+
+    width: 25px;
+    height: 14px;
+
+    color: #fff;
+    text-align: center;
+
+    background-color: #7f7f7f;
+}
+
+.score_num i {
+    width: 0;
+    height: 0;
+
+    border-width: 4px;
+    border-style: solid dashed dashed dashed;
+    border-color: #7f7f7f transparent transparent transparent;
+}
+
+/* 满意切换 */
+
+.review_tab {
+    height: 32px;
+
+    background-color: #f2f2f2;
+}
+
+.review {
+    height: 100%;
+
+    padding-left: 20px;
+
+    line-height: 32px;
+}
+
+.review li {
+    float: left;
+
+    height: 100%;
+
+    margin-right: 40px;
+}
+
+.review li a {
+    display: inline-block;
+
+    height: 30px;
+
+    padding: 0 5px;
+
+    line-height: 30px;
+}
+
+.review .active {
+    border-bottom: 2px solid #317de6;
+
+    color: #317de6;
+    font-weight: bold;
+}
+
+.review_sort a {
+    display: inline-block;
+
+    height: 20px;
+
+    border: 1px solid #ccc;
+
+    line-height: 20px;
+}
