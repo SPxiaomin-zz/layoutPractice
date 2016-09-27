@@ -214,3 +214,63 @@
 
         - 通过 `text-align: center` 实现水平居中的效果；
         - 通过文本基线对齐的特性实现垂直方向上的对齐；
+
+### 商品介绍页面总结
+
+#### .userPosition
+
+- .userPosition 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现水平居中的效果；
+        - 通过 `margin` 来实现上下和其他元素之间的隔离；
+
+    - 细节分析
+
+        - 由于元素之间是存在空白字符的，所以通过在 `.userPosition` 设置字体大小为0，然后分别再在各个元素上设置字体的大小就可以实现去掉元素之间的空白符的影响；
+
+#### .description_info
+
+- .description_info 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现水平居中的效果；
+        - 通过浮动和定宽来实现左右布局的效果；
+
+- .description_imgs 实现总结
+
+    - 布局分析
+
+        - .des_smimg 中的图片是通过浮动来布局的，并且此元素使用 `margin` 实现水平居中；
+
+    - 细节分析
+
+        - .des_smimg 中的每一张图片都设置了 `border` 属性，所以在相邻的图片之间就存在2倍边框，通过使用 `margin-left: -1;` 来实现边框重叠的效果；当要实现 `.active` 的效果的时候，由于后来居上的原则，右边框会被右边的图片覆盖掉，所以通过 `position: relative;` 来提高元素的层级；
+
+- .des_content 实现总结
+
+    - 布局分析
+
+        - 其中的左右两栏效果都是通过 `float: left;` 和 `padding` 来实现的；    
+        - .shop_buy 通过的是 `text-align: center` 和 `vertical-align: middle` 来实现水平和垂直方向居中效果的；
+
+    - 细节分析
+
+        - .dt 部分通过的是 `text-indent` 和 `line-height` 来实现水平方向上的字体位置移动和垂直方向上的字体居中效果；
+        - .hg_icon 通过了 `background` 设置背景图片；通过 `text-indent` 和 `line-height` 实现字体的水平和垂直方向上的位置偏移效果；
+        - .des_number 实现：
+
+            - 通过浮动和定宽实现了位置效果；
+            - 左右的两个加减按钮通过 `text-align: center` 和 `line-height` 来实现了水平方向和垂直方向上的居中效果；
+            - 中间的输入框通过 `text-align: center` 实现从框中间开始输入的效果；
+
+        - .des_select 和 .notes 都是通过 `text-indent` 来实现字体偏移的；
+
+### .des_info 实现总结
+
+    - 布局分析
+
+        - 通过 .comWidth 实现方向内容居中的效果；
+        - 通过浮动和定宽来实现左右两栏的效果；
