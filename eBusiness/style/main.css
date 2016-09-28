@@ -1646,3 +1646,17 @@
 .review_cont p {
     line-height: 30px;
 }
+
+/* 购物车 */
+
+.stepBox {
+    width: 396px;
+
+    padding-top: 26px;
+}
+
+.step {
+    height: 19px;
+
+    background: url(../images/step.jpg) left top no-repeat;
+}
