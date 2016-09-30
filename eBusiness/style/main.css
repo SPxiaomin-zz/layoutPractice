@@ -1906,3 +1906,36 @@
 .cart_no_bor {
     border-bottom: none;
 }
+
+.cart_rmb {
+    margin-bottom: 16px;
+
+    text-align: right;
+}
+
+.cart_rmb i {
+    color: #999;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.cart_rmb span {
+    color: red;
+    font-size: 24px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.cart_btnBox {
+    text-align: right;
+}
+
+.cart_btn {
+    width: 165px;
+    height: 33px;
+
+    color: #fff;
+    font: 18px/33px "Microsoft YaHei", "微软雅黑";
+
+    background-color: #e50007;
+}
