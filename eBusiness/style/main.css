@@ -1939,3 +1939,99 @@
 
     background-color: #e50007;
 }
+
+/* 登录 */
+
+.login_logo .comWidth {
+    width: 460px;
+}
+
+.welcome_title {
+    float: left;
+
+    padding-left: 24px;
+
+    color: #fff;
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+}
+
+.loginBox {
+    position: relative;
+
+    width: 458px;
+
+    margin: 10px auto;
+    border: 1px solid #999;
+}
+
+.login_cont {
+    padding: 15px 76px;
+}
+
+.l_tit {
+    color: #666;
+    line-height: 20px;
+}
+
+.login_input {
+    width: 100%;
+    height: 32px;
+
+    border: 1px solid #999;
+
+    text-indent: 5px;
+}
+
+.user_icon {
+    background: url(../images/icon/user_icon.jpg) right center no-repeat;
+}
+
+.mb_10 {
+    margin-bottom: 10px;
+}
+
+.autoLogin {
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.checked {
+    position: relative;
+    top: 3px;
+
+    margin-right: 3px;
+}
+
+.login_btn {
+    width: 309px;
+    height: 36px;
+
+    background: url(../images/icon/login_btn.jpg) left top no-repeat;
+}
+
+.login_partners {
+    padding-top: 34px;
+}
+
+.login_list li {
+    float: left;
+
+    line-height: 20px;
+}
+
+.login_list span {
+    margin: 0 2px;
+
+    color: #999;
+}
+
+.reg_link {
+    position: absolute;
+    right: 31px;
+    bottom: -31px;
+    
+    width: 115px;
+    height: 31px;
+
+    background: url(../images/icon/red_link.jpg) left top no-repeat;
+}
