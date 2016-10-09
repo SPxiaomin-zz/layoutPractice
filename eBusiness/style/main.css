@@ -2029,9 +2029,56 @@
     position: absolute;
     right: 31px;
     bottom: -31px;
-    
+
     width: 115px;
     height: 31px;
 
     background: url(../images/icon/red_link.jpg) left top no-repeat;
+}
+
+.reg_logo .comWidth {
+    width: 630px;
+}
+
+.regBox {
+    width: 628px;
+
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+
+.reg_item {
+    float: left;
+
+    width: 110px;
+
+    font: 14px/34px "宋体";
+    text-align: right;
+}
+
+.reg_item i {
+    margin-right: 5px;
+
+    color: red;
+    font-style: normal;
+}
+
+.input_item {
+    float: left;
+
+    width: 306px;
+}
+
+.regBox li {
+    height: 70px;
+}
+
+.regBox .autoLogin {
+    height: 46px;
+
+    padding: 0;
+}
+
+.regBox .login_cont {
+    padding: 45px 76px 20px;
 }

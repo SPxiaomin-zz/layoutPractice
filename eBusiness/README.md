@@ -406,3 +406,19 @@
 
     - .cart_count 通过右浮动的位置特性及其宽度的收缩特性排列在右边；
     - .cart_rmb 使用的 `text-align: right;` 来实现了字体的右侧排列效果；
+
+### 登录页面总结
+
+#### .login_logo 实现总结
+
+- 布局分析
+
+    - 通过 .comWidth 实现页面居中的效果；
+
+- 细节分析
+
+    - .welcome_title 通过浮动并设置 padding 来实现和左侧图片的间隔，通过设置行高的方式实现垂直居中的效果；
+
+#### .loginBox 实现总结
+
+- stop writing here
