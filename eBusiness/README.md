@@ -421,4 +421,26 @@
 
 #### .loginBox 实现总结
 
-- stop writing here
+- 布局分析
+
+    - 通过 `margin` 和 定宽实现水平居中的效果；
+    - 使用了 `position: relative` 从而成为了 .reg_link 绝对定位时候的包含块；
+    - .login_cont 使用的原因：没有使用 `box-sizing` 来定义盒子模型，如果要增加 .loginBox 的内边距的话，就得在每次更改内边距的时候重新设置尺寸值，所以通过多添加一个 `div` 的方法来实现这种效果；
+
+#### .login 实现总结
+
+- 细节分析
+
+    - 前两个 input 元素
+
+        - 通过设置 `text-indent` 属性的方式来使得在控件中输入文字的时候与左侧有间隔；
+        - 右侧的人头图像通过的是特殊的截图方式和背景来实现的；
+
+    - checkbox 通过的是 `position: relative` 来实现右侧文字的居中对齐的；
+    - .login_btn 通过的是背景的设置方式来实现的；
+
+#### .login_partners 实现总结
+
+- 布局分析
+
+    - li 通过左浮动来实现的布局方式；
